@@ -43,6 +43,9 @@ For DC-Net-R-HR we also provide the predicted saliency maps for high-resolution 
 | DC-Net-S | [GoogleDrive](https://drive.google.com/file/d/1CoCNZzNC7g4EymLQlZ0vHcoh8qONdRob/view?usp=share_link) |
 | DC-Net-R-HR | [GoogleDrive](https://drive.google.com/file/d/1Io_aKlke9UdB2xv8PJyvEINjzWZjCJlw/view?usp=share_link) |
 
+## How to modify the edge width of the edge map?
+You just need to modify the 330 line of `data_loader_cache.py`, where the last hyperparameter $thickness$ of `cv2.drawContours means` the bilateral edge pixel, after processing by line 332, the bilateral edge pixel becomes inter unilateral edge pixel $edge\ width$, which is what we want. $edge\ width$=($thickness$+1)/2.
+
 ## Citation
 ```
 @article{zhu2023dc,
