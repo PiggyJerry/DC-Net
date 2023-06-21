@@ -1,7 +1,7 @@
 # DC-Net
 This is the official repo for our paper: "DC-Net: Divide-and-Conquer for Salient Object Detection".
 
-Authors: Jiayi Zhu, Xuebin Qin, Abdulmotaleb Elsaddik
+Authors: Jiayi Zhu, Xuebin Qin and Abdulmotaleb Elsaddik
 
 __Contact__: zjyzhujiayi55@gmail.com
 
