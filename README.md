@@ -1,5 +1,5 @@
 # DC-Net
-This is the official repo for our paper: "DC-Net: Divide-and-Conquer for Salient Object Detection"
+This is the official repo for our paper: "DC-Net: Divide-and-Conquer for Salient Object Detection".
 
 Authors: Jiayi Zhu, Xuebin Qin, Abdulmotaleb Elsaddik
 
@@ -33,8 +33,8 @@ First, put test images to the directory `DC-Net/testImgs`, then cd to the direct
 
 7. We also provide the predicted saliency maps:
 
-| name | Low-Resolution Datasets | High-Resolution Datasets |
-| :---: | :---: | :---: |
-| DC-Net-R | GoogleDrive() | GoogleDrive() |
-| DC-Net-S | GoogleDrive() | GoogleDrive() |
-| DC-Net-R-HR | GoogleDrive() | GoogleDrive() |
+| name | Saliency maps |
+| :---: | :---: |
+| DC-Net-R | GoogleDrive() |
+| DC-Net-S | GoogleDrive() |
+| DC-Net-R-HR | GoogleDrive() |
