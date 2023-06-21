@@ -31,10 +31,24 @@ First, download the datasets to the directory `DC-Net/datasets`, then cd to the 
 
 First, put test images to the directory `DC-Net/testImgs`, then cd to the directory 'DC-Net', run the inference process by command: ```python Inference-R.py``` for DC-Net-R or ```python Inference-S.py``` for DC-Net-S respectively. 
 
-7. We also provide the predicted saliency maps:
+## Predicted saliency maps
 
-| name | Saliency maps |
+For DC-Net-R and DC-Net-S we provide the predicted saliency maps for low-resolution datasets DUTS-TE, DUT-OMRON, HKU-IS, ECSSD and PASCAL-S.
+
+For DC-Net-R-HR we also provide the predicted saliency maps for high-resolution datasets DIS-TE, ThinObject5K, UHRSD, HRSOD and DAVIS-S.
+
+| name | predicted saliency maps |
 | :---: | :---: |
-| DC-Net-R | GoogleDrive() |
-| DC-Net-S | GoogleDrive() |
-| DC-Net-R-HR | GoogleDrive() |
+| DC-Net-R | [GoogleDrive](https://drive.google.com/file/d/1nUvXLkUovfutIRxTsKQ2csuGpRUMhYxv/view?usp=share_link) |
+| DC-Net-S | [GoogleDrive](https://drive.google.com/file/d/1CoCNZzNC7g4EymLQlZ0vHcoh8qONdRob/view?usp=share_link) |
+| DC-Net-R-HR | [GoogleDrive](https://drive.google.com/file/d/1Io_aKlke9UdB2xv8PJyvEINjzWZjCJlw/view?usp=share_link) |
+
+## Citation
+```
+@article{zhu2023dc,
+  title={DC-Net: Divide-and-Conquer for Salient Object Detection},
+  author={Zhu, Jiayi and Qin, Xuebin and Elsaddik, Abdulmotaleb},
+  journal={arXiv preprint arXiv:2305.14955},
+  year={2023}
+}
+```
