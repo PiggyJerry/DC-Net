@@ -11,6 +11,7 @@ __Contact__: zjyzhujiayi55@gmail.com
 git clone https://github.com/PiggyJerry/DC-Net.git
 ```
 2. Download the pre-trained model
+**hhhhhhh
 | name | pretrain | backbone | resolution | #params | FPS | download |
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
 | DC-Net-R | DUTS-TR | ResNet-34 | 352*352 | 356.3MB | 60 | GoogleDrive() |
