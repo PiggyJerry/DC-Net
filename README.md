@@ -46,6 +46,9 @@ For DC-Net-R-HR we also provide the predicted saliency maps for high-resolution 
 ## How to modify the edge width of the edge map?
 You just need to modify the 330 line of `data_loader_cache.py`, where the last hyperparameter $thickness$ of `cv2.drawContours means` the bilateral edge pixel, after processing by line 332, the bilateral edge pixel becomes inter unilateral edge pixel $edge\ width$, which is what we want. $edge\ width$=($thickness$+1)/2.
 
+## How to use Parallel-ResNet and Parallel-Swin-Transformer?
+Same as the original ResNet and Swin-Transformer, you just need to modify the new hyperparameter `parallel` to how many encoders you want. 
+
 ## Citation
 ```
 @article{zhu2023dc,
