@@ -1,13 +1,4 @@
-"""
- @Time    : 2021/7/6 09:53
- @Author  : Haiyang Mei
- @E-mail  : mhy666@mail.dlut.edu.cn
- 
- @Project : CVPR2021_PFNet
- @File    : resnet.py
- @Function: ResNet Model File
- 
-"""
+
 import torch
 import torch.nn as nn
 
