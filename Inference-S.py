@@ -15,7 +15,7 @@ from einops import rearrange
 
 if __name__ == "__main__":
     dataset_path="./testImgs"  #Your dataset path
-    model_path="./saved_models/DC-Net-R.pth"  # the model path
+    model_path="./saved_models/DC-Net-S.pth"  # the model path
     result_path="./results/testImgs"  #The folder path that you want to save the results
     input_size=[384,384]
     net=Inference_DC_Net()
