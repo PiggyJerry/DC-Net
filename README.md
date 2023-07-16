@@ -39,9 +39,9 @@ For DC-Net-R-HR we also provide the predicted saliency maps for high-resolution 
 
 | name | predicted saliency maps |
 | :---: | :---: |
-| DC-Net-R | [GoogleDrive](https://drive.google.com/file/d/1nUvXLkUovfutIRxTsKQ2csuGpRUMhYxv/view?usp=share_link) |
-| DC-Net-S | [GoogleDrive](https://drive.google.com/file/d/1CoCNZzNC7g4EymLQlZ0vHcoh8qONdRob/view?usp=share_link) |
-| DC-Net-R-HR | [GoogleDrive](https://drive.google.com/file/d/1Io_aKlke9UdB2xv8PJyvEINjzWZjCJlw/view?usp=share_link) |
+| DC-Net-R | [GoogleDrive](https://drive.google.com/file/d/1nUvXLkUovfutIRxTsKQ2csuGpRUMhYxv/view?usp=share_link)/[Baidu Pan](https://pan.baidu.com/s/1yrbikTVf_uLdcHsbMKTdMg?pwd=i4r9) |
+| DC-Net-S | [GoogleDrive](https://drive.google.com/file/d/1CoCNZzNC7g4EymLQlZ0vHcoh8qONdRob/view?usp=share_link)/[Baidu Pan](https://pan.baidu.com/s/1FHq6iEiuBBwpHeI0LfxEvA?pwd=3gld) |
+| DC-Net-R-HR | [GoogleDrive](https://drive.google.com/file/d/1Io_aKlke9UdB2xv8PJyvEINjzWZjCJlw/view?usp=share_link)/[Baidu Pan](https://pan.baidu.com/s/12sl7yWcN1Zdvdr5LyoT2CQ?pwd=ww0a) |
 
 ## How to modify the edge width of the edge map?
 You just need to modify the 330 line of `data_loader_cache.py`, where the last hyperparameter $thickness$ of `cv2.drawContours` means the bilateral edge pixel, after processing by line 332, the bilateral edge pixel becomes inter unilateral edge pixel $edge\ width$, which is what we want. $edge\ width$=($thickness$+1)/2.
