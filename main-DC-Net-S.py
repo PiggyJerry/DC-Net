@@ -232,13 +232,13 @@ def valid(net_test,state_dict, valid_dataloaders, valid_datasets, hypar, epoch=0
                         names['weight'+str(i)]=".".join([weight.split(".")[0]+"_"+str(i),*weight.split(".")[1:]])
                         weights.append(names['weight'+str(i)])
                     if "relative_position_bias_table" in weight:
-                        test_state_dict[weight]=torch.stack(weights)
+                        test_state_dict[weight]=torch.stack([state_dict[_] for _ in weights])
                     elif len(test_state_dict[weight].shape)==4:
-                        test_state_dict[weight]=torch.cat(weights,0)
+                        test_state_dict[weight]=torch.cat([state_dict[_] for _ in weights],0)
                     elif len(test_state_dict[weight].shape)==2:
-                        test_state_dict[weight]=torch.block_diag(*weights)
+                        test_state_dict[weight]=torch.block_diag(*[state_dict[_] for _ in weights])
                     elif len(test_state_dict[weight].shape)==1:
-                        test_state_dict[weight]=torch.cat(weights,0)
+                        test_state_dict[weight]=torch.cat([state_dict[_] for _ in weights],0)
                     elif len(test_state_dict[weight].shape)==0:#num_batches_tracked
                         test_state_dict[weight]=state_dict[weights[0]]==state_dict[weights[1]]
 
