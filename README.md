@@ -15,7 +15,7 @@ git clone https://github.com/PiggyJerry/DC-Net.git
 
 | name | pretrain | backbone | resolution | #params | FPS | download |
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| DC-Net-R | DUTS-TR | ResNet-34 | 352*352 | 356.3MB | 60 | [GoogleDrive](https://drive.google.com/file/d/17-yqt_aEorTpKOEzMgobpBIjHZbrRbov/view?usp=sharing)[Baidu Pan](https://pan.baidu.com/s/1WqXHf_GmQcJ_6V8S0xHYyA?pwd=1sq1) |
+| DC-Net-R | DUTS-TR | ResNet-34 | 352*352 | 356.3MB | 60 | [GoogleDrive](https://drive.google.com/file/d/17-yqt_aEorTpKOEzMgobpBIjHZbrRbov/view?usp=sharing)/[Baidu Pan](https://pan.baidu.com/s/1WqXHf_GmQcJ_6V8S0xHYyA?pwd=1sq1) |
 | DC-Net-S | DUTS-TR | Swin-B | 384*384 | 1495.0MB | 29 | [GoogleDrive](https://drive.google.com/file/d/1HNeIH-pmwaf7V6RaAPOu6Gda4dR7CjNL/view?usp=sharing) |
 | DC-Net-R-HR | DIS5K | ResNet-34 | 1024*1024 | 356.3MB | 55 | [GoogleDrive](https://drive.google.com/file/d/1At4I-TXSOZOrOth4PrNF_oUAo3Yz5z8f/view?usp=sharing) |
 
