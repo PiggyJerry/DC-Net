@@ -431,20 +431,20 @@ if __name__ == "__main__":
     hypar["max_epoch_num"] = 1000000
     
     dataset_train1 = {"name": "DUTS-TR",
-            "im_dir": "/home/jiayi/DC-Net/datasets/DUTS-TR/im",
-            "gt_dir": "/home/jiayi/DC-Net/datasets/DUTS-TR/gt",
+            "im_dir": "./datasets/DUTS-TR/im",
+            "gt_dir": "./datasets/DUTS-TR/gt",
             "im_ext": ".jpg",
             "gt_ext": ".png",
-            "cache_dir":"/home/jiayi/DC-Net/datasets/DUTS-TR/cache_"+str(hypar["cache_size"][0])}
+            "cache_dir":"./datasets/DUTS-TR/cache_"+str(hypar["cache_size"][0])}
 
     dataset_valid1 = {"name": "DUTS-TE",
-                    "im_dir": "/home/jiayi/DC-Net/datasets/DUTS-TE/im",
-                    "gt_dir": "/home/jiayi/DC-Net/datasets/DUTS-TE/gt",
+                    "im_dir": "./datasets/DUTS-TE/im",
+                    "gt_dir": "./datasets/DUTS-TE/gt",
                     "im_ext": ".jpg",
                     "gt_ext": ".png",
-                    "cache_dir":"/home/jiayi/DC-Net/datasets/DUTS-TE/cache_"+str(hypar["cache_size"][0])}
+                    "cache_dir":"./datasets/DUTS-TE/cache_"+str(hypar["cache_size"][0])}
 
-    hypar["model_path"] = "/home/jiayi/DC-Net/saved_models/"+hypar["model_name"]+"-"+"x".join([str(s) for s in hypar["cache_size"]])
+    hypar["model_path"] = "./saved_models/"+hypar["model_name"]+"-"+"x".join([str(s) for s in hypar["cache_size"]])
     hypar["valid_out_dir"] = hypar["model_path"]
 
     train_datasets, valid_datasets = [], []
