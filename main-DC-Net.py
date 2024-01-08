@@ -20,8 +20,6 @@ import sys
 from einops import rearrange
 import matplotlib.pyplot as plt
 from apex import amp
-import ResASPP2
-import parallel_resnet
 
 def train(net_train,state_dict,net_test, optimizer, train_dataloaders, train_datasets, valid_dataloaders, valid_datasets, hypar): #model_path, model_save_fre, max_ite=1000000):
 
