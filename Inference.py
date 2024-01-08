@@ -15,9 +15,9 @@ from reparameterize import Reparameterize
 
 if __name__ == "__main__":
     type='R'
-    dataset_path="/home/jiayi/DC-Net/datasets/PASCAL-S/im"  #Your dataset path
-    model_path="/home/jiayi/DC-Net/saved_models/"+"DC-Net-"+type+".pth"  # the model path
-    result_path="/home/jiayi/DC-Net/results/"+"DC-Net-"+type+"/PASCAL-S"  #The folder path that you want to save the results
+    dataset_path="./datasets/DUTS-TE/im"  #Your dataset path
+    model_path="./saved_models/"+"DC-Net-"+type+".pth"  # the model path
+    result_path="./results/"+"DC-Net-"+type+"/DUTS-TE"  #The folder path that you want to save the results
     if type=='R':
         input_size=[352,352]
     elif type=='S':
@@ -60,4 +60,4 @@ if __name__ == "__main__":
             mi = torch.min(result)
             result = (result-mi)/(ma-mi)
             im_name=im_path.split('/')[-1].split('.')[0]
-            # io.imsave(os.path.join(result_path,im_name+".png"),(result*255).cpu().data.numpy().astype(np.uint8))
+            io.imsave(os.path.join(result_path,im_name+".png"),(result*255).cpu().data.numpy().astype(np.uint8))
