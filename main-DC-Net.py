@@ -17,8 +17,6 @@ from basics import f1score_torch, f1_mae_torch #normPRED, GOSPRF1ScoresCache,
 from DC_Net import Training_DC_Net, Inference_DC_Net
 import logging
 import sys
-from einops import rearrange
-import matplotlib.pyplot as plt
 from apex import amp
 
 def train(net_train,state_dict,net_test, optimizer, train_dataloaders, train_datasets, valid_dataloaders, valid_datasets, hypar): #model_path, model_save_fre, max_ite=1000000):
