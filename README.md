@@ -25,11 +25,11 @@ git clone https://github.com/PiggyJerry/DC-Net.git
    
 5. Train the model.
 
-First, download the datasets to the directory `DC-Net/datasets`, then cd to the directory 'DC-Net', run the train process by command: ```python main-DC-Net-R.py``` for DC-Net-R or ```python main-DC-Net-S.py``` for DC-Net-S respectively. 
+First, download the datasets to the directory `DC-Net/datasets`, then cd to the directory 'DC-Net', run the train process by command: ```python main-DC-Net.py```. If you want to train DC-Net-S, please change the 362 line of `main-DC-Net.py` to ```hypar['type']='S'```.
 
 6. Inference the model.
 
-First, put test images to the directory `DC-Net/testImgs`, then cd to the directory 'DC-Net', run the inference process by command: ```python Inference-R.py``` for DC-Net-R or ```python Inference-S.py``` for DC-Net-S respectively. 
+First, put test images to the directory `DC-Net/testImgs`, then cd to the directory 'DC-Net', run the inference process by command: ```python Inference.py```. If you want to inference DC-Net-S, please change the 17 line of `Inference.py` to ```type='S'```.
 
 ## Predicted saliency maps
 
