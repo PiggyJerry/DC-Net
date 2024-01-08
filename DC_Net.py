@@ -142,7 +142,7 @@ class Training_DC_Net(nn.Module):
                                         num_heads=[4,8,16,32],
                                         window_size=12)
 
-            pretrained_dict = torch.load('/home/jiayi/DC-Net/checkpoint/swin_base_patch4_window12_384_22k.pth')["model"]
+            pretrained_dict = torch.load('./checkpoint/swin_base_patch4_window12_384_22k.pth')["model"]
             pretrained_dict = {k: v for k, v in pretrained_dict.items() if k in self.encoder_1.state_dict()}
             self.encoder_1.load_state_dict(pretrained_dict)
 
@@ -152,7 +152,7 @@ class Training_DC_Net(nn.Module):
                                         num_heads=[4,8,16,32],
                                         window_size=12)
 
-            pretrained_dict = torch.load('/home/jiayi/DC-Net/checkpoint/swin_base_patch4_window12_384_22k.pth')["model"]
+            pretrained_dict = torch.load('./checkpoint/swin_base_patch4_window12_384_22k.pth')["model"]
             pretrained_dict = {k: v for k, v in pretrained_dict.items() if k in self.encoder_2.state_dict()}
             self.encoder_2.load_state_dict(pretrained_dict)
 
