@@ -1,15 +1,11 @@
-
 import torch
 import torch.nn as nn
 from torchvision import models
 import torch.nn.functional as F
-from einops import rearrange
-import parallel_resnet
-from swin_transformer import SwinTransformer
-from parallel_swin_transformer import parallel_swin_transformer
+from parallel_encoder import parallel_resnet
+from parallel_encoder.swin_transformer import SwinTransformer
+from parallel_encoder.parallel_swin_transformer import parallel_swin_transformer
 from ResASPP2 import ResASPP2_train, ResASPP2_test
-
-import matplotlib.pyplot as plt
 
 def _iou(pred, target, size_average = True):
     smooth=1e-6
