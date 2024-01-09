@@ -359,7 +359,7 @@ if __name__ == "__main__":
 
     ### --- hyperparamters of training ---
     hypar = {}
-    hypar['type']='S'#'R' denotes ResNet34, 'S' denotes Swin-Transformer
+    hypar['type']='R'#'R' denotes ResNet34, 'S' denotes Swin-Transformer
 
     hypar["random_flip_h"] = 1
     hypar["random_flip_v"] = 0
