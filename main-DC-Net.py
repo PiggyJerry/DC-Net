@@ -116,7 +116,7 @@ def train(net_train,state_dict,net_test, optimizer, train_dataloaders, train_dat
                 tmp_f1, tmp_mae, val_loss, tar_loss, i_val, tmp_time = valid(net_test,net_train.state_dict(), valid_dataloaders, valid_datasets, hypar, epoch)
                 logging.info(
                 'iteration %d : f1 : %f mae : %f' % (ite_num, tmp_f1[-1], tmp_mae[-1]))
-                # net.train()  # resume train
+                net.train()  # resume train
 
                 tmp_out = 0
                 print("last_f1:",last_f1)
