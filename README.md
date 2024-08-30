@@ -51,10 +51,12 @@ Same as the original ResNet and Swin-Transformer, you just need to modify the ne
 
 ## Citation
 ```
-@article{zhu2023dc,
-  title={DC-Net: Divide-and-Conquer for Salient Object Detection},
+@article{zhu2024dc,
+  title={Dc-net: Divide-and-conquer for salient object detection},
   author={Zhu, Jiayi and Qin, Xuebin and Elsaddik, Abdulmotaleb},
-  journal={arXiv preprint arXiv:2305.14955},
-  year={2023}
+  journal={Pattern Recognition},
+  pages={110903},
+  year={2024},
+  publisher={Elsevier}
 }
 ```
